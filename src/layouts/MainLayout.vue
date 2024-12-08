@@ -50,7 +50,7 @@
     </v-main>
 
     <v-footer app class="footer">
-      <span>Copyright © 2022 Vuetify</span>
+      <span>Copyright © 2024 Massa Web</span>
     </v-footer>
   </v-app>
 </template>

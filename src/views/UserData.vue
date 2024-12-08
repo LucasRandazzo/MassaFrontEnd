@@ -100,8 +100,10 @@ import ContentBanner from '@/components/ContentBanner.vue';
 import { getIpInfos } from '@/services/Geolocation';
 import { getCountryName } from '@/services/Geolocation';
 import { useStatsStore } from '@/stores/stats';
+import { useGeolocationStore } from '@/stores/geolocation';
 
 const statsStore = useStatsStore();
+const geolocationStore = useGeolocationStore();
 
 const banner = {
     title: "User Data",
@@ -143,41 +145,30 @@ async function fetchStats() {
     }
 }
 
-
 async function fillIpInfos() {
     try {
-        ipInfo.value = await getIpInfos();
+        ipInfo.value = await geolocationStore.fetchUsersIpInfos();
     } catch (error) {
         ipError.value = error;
         return;
     }
 
-    // Check if city exists in cities array
-    const cityExists = cities.value.some(city => city.name === ipInfo.value.city);
-    if (!cityExists) {
+    ipInfo.value.forEach(element => {
         cities.value.push({
-            name: ipInfo.value.city,
-            country: getCountryName(ipInfo.value.country),
+            name: element.city,
+            country: element.country,
         });
-    }
-
-    // Update page counts
+    })
+    
     pageCount.value = Math.ceil(cities.value.length / itemsPerPage);
 }
-
-async function getBiologicalActivitiesTotal() {
-    return biologicalActivityTotal;
-}
-
 
 onMounted(async () => {
 
     await Promise.all([
         fillIpInfos(),
         fetchStats()
-
     ])
-
 });
 </script>
 
