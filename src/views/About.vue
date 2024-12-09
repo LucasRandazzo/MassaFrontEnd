@@ -29,14 +29,6 @@
         <v-list lines="two">
           <v-list-subheader>Massa Software</v-list-subheader>
 
-          <v-list-item prepend-avatar="https://cdn.vuetifyjs.com/images/lists/2.jpg" title="Douglas Galvão">
-            <template v-slot:subtitle>
-              <p class="text-subtitle-2">Email:<a>douglas-mad@live.com</a></p>
-            </template>
-          </v-list-item>
-
-          <v-divider inset></v-divider>
-
           <v-list-item prepend-avatar="https://cdn.vuetifyjs.com/images/lists/2.jpg" title="Gabriel Ramos">
             <template v-slot:subtitle>
               <p class="text-subtitle-2">Email:<a>gabrielrmzf@gmail.com</a></p>
