@@ -9,9 +9,10 @@
         <v-list lines="two">
           <v-list-subheader>Massa Algorithm</v-list-subheader>
 
-          <v-list-item prepend-avatar="/fileTypes/foto_perfil_gverissimo.jpeg" title="Grabriel Veríssimo">
+          <v-list-item prepend-avatar="/fileTypes/foto_perfil_gverissimo.jpeg" title="Gabriel Veríssimo">
             <template v-slot:subtitle>
               <p class="text-subtitle-2">Email:<a>gabrielverissimo@ufmg.br</a></p>
+              <p class="text-subtitle-2">LinkedIn:<a href="https://www.linkedin.com/in/gabrielcverissimo/" target="_blank">Gabriel Veríssimo</a></p>
             </template>
           </v-list-item>
 
@@ -20,6 +21,7 @@
           <v-list-item prepend-avatar="/fileTypes/foto_perfil_vmaltarollo.jpeg" title="Vinicius Maltarollo">
             <template v-slot:subtitle>
               <p class="text-subtitle-2">Email:<a>maltarollo@ufmg.br</a></p>
+              <p class="text-subtitle-2">LinkedIn:<a href="https://www.linkedin.com/in/vinicius-maltarollo-5740bb10/" target="_blank">Vinicius Maltarollo</a></p>
             </template>
           </v-list-item>
         </v-list>
@@ -32,6 +34,7 @@
           <v-list-item prepend-avatar="/fileTypes/foto_perfil_gramos.jpg" title="Gabriel Ramos">
             <template v-slot:subtitle>
               <p class="text-subtitle-2">Email:<a>gabrielrmzf@gmail.com</a></p>
+              <p class="text-subtitle-2">LinkedIn:<a href="https://www.linkedin.com/in/gramos22/" target="_blank">Gabriel Ramos</a></p>
             </template>
           </v-list-item>
 
@@ -40,6 +43,7 @@
           <v-list-item prepend-avatar="/fileTypes/foto_perfil_jp.jpg" title="João Pedro Braga">
             <template v-slot:subtitle>
               <p class="text-subtitle-2">Email:<a>joao.psbraga6@gmail.com</a></p>
+              <p class="text-subtitle-2">LinkedIn:<a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-braga-6a9264276/" target="_blank">João Pedro Braga</a></p>
             </template>
           </v-list-item>
 
@@ -48,6 +52,7 @@
           <v-list-item prepend-avatar="/fileTypes/foto_perfil_romero.jpg" title="João Vitor Romero">
             <template v-slot:subtitle>
               <p class="text-subtitle-2">Email:<a>joaovitor.rome@gmail.com</a></p>
+              <p class="text-subtitle-2">LinkedIn:<a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-romero-sales-269544210/" target="_blank">João Vitor Romero</a></p>
             </template>
           </v-list-item>
 
@@ -56,6 +61,7 @@
           <v-list-item prepend-avatar="/fileTypes/foto_perfil_lrandazzo.jpeg" title="Lucas Randazzo">
             <template v-slot:subtitle>
               <p class="text-subtitle-2">Email:<a>lucasrandazzo2@gmail.com</a></p>
+              <p class="text-subtitle-2">LinkedIn:<a href="https://www.linkedin.com/in/lucas-randazzo-13ba92264/" target="_blank">Lucas Randazzo</a></p>
             </template>
           </v-list-item>
         </v-list>
