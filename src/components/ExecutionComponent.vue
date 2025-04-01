@@ -242,7 +242,7 @@
             </v-col>
             </div> 
             <div v-for="(image, key) in massaStore.graphics.dendrograms" :key="key">
-              <img v-if="image" :src="`data:image/png;base64,${image}`" alt="Dendrogram" class="image" />
+              <ZoomImage v-if="image" :src="`data:image/png;base64,${image}`" />
             </div>
 
             <div class="d-flex"> 
@@ -290,6 +290,7 @@ import CardFile from '@/components/CardFile.vue';
 import AlertDialog from '@/components/AlertDialog.vue';
 import { useMassaStore } from '@/stores/massa';
 import ExecutionService from '@/services/ExecutionService';
+import ZoomImage from '@/components/Zoomimage.vue';
 
 
 const massaStore = useMassaStore();
